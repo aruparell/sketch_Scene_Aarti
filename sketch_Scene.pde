@@ -30,18 +30,26 @@ void draw() {
   ellipse (middleX+100, middleY-200, 50, 50); //center of cloud;
   
  noStroke();
- fill (darkGreen);
+ fill (darkGreen); //middle hill
  ellipse (middleX, middleY+280, 600,400);
  
- fill (green);
+ fill (green); //side hills
  ellipse (middleX-400, middleY+280, 600,400);
  ellipse (middleX+400, middleY+280, 600,400);
  
- fill (brown);
+ fill (brown);//trunk
  rect (middleX, middleY, 10, 200);
- fill (green);
+ fill (green);//tree top
  ellipse (middleX, middleY, 150,150);
  
-
+  fill (brown);//trunk
+ rect (middleX-200, middleY+10, 10, 150);
+ fill (green);//tree top
+ ellipse (middleX-200, middleY, 100,100);
+ 
+fill (brown);//trunk
+ rect (middleX+200, middleY+10, 10, 150);
+ fill (green);//tree top
+ ellipse (middleX+200, middleY, 100,100);
 }
 
